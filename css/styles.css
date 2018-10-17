@@ -120,22 +120,23 @@ p {
 	text-align: right;
 	font-weight: bolder;
 	letter-spacing: 2px;
-	font-size: 1.6em;
+	font-size: 2em;
 	font-family: 'SF Pro Display-SB';
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	justify-content: flex-end;
 }
 
 .circle {
-	width: 35px;
-	height: 35px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
 	background-color: rgb(93, 93, 93);
 	margin-right: 15px;
 	filter: blur(6px);
   -webkit-filter: blur(6px);
-    align-self: baseline;
+    /* align-self: baseline; */
 }
 
 .welcomeGrid {
@@ -179,10 +180,10 @@ table tbody{
 }
 
 table tr td {
-	padding: .2em;
+	padding: .4em;
 	height: 36.5px;
 	font-family: 'SFProText-Reg';
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 .directoryGridTwo {
@@ -315,13 +316,13 @@ table tr td {
 }
 
 .iconReg {
-	width: 40px;
+	width: 30px;
 	height: auto;
 	margin-top: 15%;
 }
 
 .iconSmall {
-	width: 35px;
+	width: 25px;
 	height: auto;
 	margin-top: 15%;
 }
