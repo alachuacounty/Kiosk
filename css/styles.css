@@ -47,6 +47,10 @@ h3 {
 	font-size: 1.5rem;
 }
 
+p {
+	margin-bottom: 0;
+}
+
 .frosty, .frosty2 {
 	background: inherit;
 	color: #FFF;
@@ -97,8 +101,8 @@ h3 {
 .grid {
 	display: grid;
 	grid-template-columns: 1.6fr 3fr 2fr;
-	grid-template-rows: .75fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 1fr .5fr 1fr 1fr;
-	grid-row-gap: 5px;
+	grid-template-rows: 1.25fr 1fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 1fr .5fr 1fr 1fr;
+	/* grid-row-gap: 5px; */
 	width: 100vw;
 	height: 100vh;
 	margin: 0;
@@ -136,8 +140,8 @@ h3 {
 
 .welcomeGrid {
 	grid-column-start: 1;
-	grid-row-start: 5;
-    grid-row-end: 11;
+	grid-row-start: 6;
+    grid-row-end: 12;
 }
 
 .welcome {
@@ -159,15 +163,19 @@ h3 {
 	padding: 0;
 	color: white;
 	grid-column-start: 3;
-	grid-row-start: 2;
-    grid-row-end: 11;
+	grid-row-start: 3;
+    grid-row-end: 12;
 }
 
 table {
     border-spacing: .1em;
-	border-collapse: separate;
+	/* border-collapse: separate; */
 	margin: 0;
 	align-self: center;
+}
+
+table tbody{ 
+	border: none;
 }
 
 table tr td {
@@ -180,7 +188,7 @@ table tr td {
 .directoryGridTwo {
     display: grid;
     grid-template-columns: 1.75fr 4fr 1fr;
-    grid-template-rows:.05fr 2fr .05fr 2fr .05fr 2fr .05fr 2fr .05fr .75fr .05fr;
+    grid-template-rows:2fr 2fr 2fr 2fr 1fr;
     height: 100%;
 }
 
@@ -248,8 +256,9 @@ table tr td {
 }
 
 .floor {
-    color: white;
-	margin: 15% 0;
+	color: white;
+	border-right: .5px solid white;
+	/* margin: 15% 0; */
 	line-height: 1;
 	font-size: 200px;
 	font-family: 'SF Pro Display-SB';
@@ -297,7 +306,8 @@ table tr td {
 }
 
 .iconsOne, .iconsTwo, .iconsThree, .iconsFour {
-	margin: 5px 0;
+	/* margin: 5px 0; */
+	/* border-left: .5px solid white; */
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
