@@ -1,3 +1,9 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
 @font-face {
     font-family: 'SF Pro Display-Reg';
     src: url(../fonts/SF-Pro-Display-Regular.otf);
