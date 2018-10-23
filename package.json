@@ -1,0 +1,22 @@
+{
+  "name": "kiosk",
+  "version": "1.0.0",
+  "description": "Coming soon...",
+  "main": "indeex.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alachuacounty/Kiosk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alachuacounty/Kiosk/issues"
+  },
+  "homepage": "https://github.com/alachuacounty/Kiosk#readme",
+  "dependencies": {
+    "foundation-sites": "^6.5.0-rc.4"
+  }
+}
