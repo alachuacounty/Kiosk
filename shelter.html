@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="sass/main.css">
 </head>
 
 <body>
@@ -16,15 +17,15 @@
     </header>
     <main>
     
-        <div class="tabContent">  
-            <div class="tabContent--container">
-                <ul class="tabs" data-tabs id="shelter-tabs">
+        <div class="tabContainer">  
+            <div class="tabContainer__headers">
+                <ul class="tabs frosty tabContent__headers--tabs" data-tabs id="shelter-tabs">
                     <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
                     <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
                 </ul>
             </div>
             
-            <div class="tabs-content" data-tabs-content="shelter-tabs">
+            <div class="tabs-content frosty tabContainer__content" data-tabs-content="shelter-tabs">
                 <div class="tabs-panel is-active" id="panel1">
                     <p>One</p>
                     <p>Check me out! I'm a super cool Tab panel with text content!</p>

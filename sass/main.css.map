@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AQAA,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,cAAc;CA8BjC;;AA5BI,AAAD,sBAAU,CAAC;EACP,OAAO,EAAE,IAAI;EACZ,eAAe,EAAE,MAAM;CAgB3B;;AAdK,AAGM,4BAHA,CAEJ,WAAW,CACP,CAAC,CAAC;EACE,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,KAAK;CAMf;;AAXP,AAOU,4BAPJ,CAEJ,WAAW,CACP,CAAC,AAII,MAAM,EAPjB,4BAAM,CAEJ,WAAW,CACP,CAAC,EAIY,AAAA,aAAC,CAAD,IAAC,AAAA,EAAoB;EAC1B,aAAa,EAAE,gBAAgB;EAC/B,UAAU,EAAE,WAAW;CAC1B;;AAMhB,AAAD,sBAAU,CAAC;EACP,MAAM,EAAE,IAAI;CAMd;;AAPD,AAGG,sBAHM,CAGN,WAAW,CAAC;EACR,gBAAgB,EAAE,KAAK;EACvB,KAAK,EAAE,KAAK;CACd",
     "sources": [
         "main.scss",
         "base/_reset.scss",
@@ -10,6 +10,7 @@
         "components/_animations.scss",
         "components/_button.scss",
         "components/_card.scss",
+        "components/_tabs.scss",
         "base/_typography.scss",
         "base/_layout.scss"
     ],

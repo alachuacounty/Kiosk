@@ -1,1 +1,38 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.tabContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.tabContainer__headers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tabContainer__headers--tabs .tabs-title a {
+  font-size: 2rem;
+  color: white;
+}
+
+.tabContainer__headers--tabs .tabs-title a:focus, .tabContainer__headers--tabs .tabs-title a [aria-selected=true] {
+  border-bottom: 5px solid yellow;
+  background: transparent;
+}
+
+.tabContainer__content {
+  border: none;
+}
+
+.tabContainer__content .tabs-panel {
+  background-color: black;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

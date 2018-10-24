@@ -1,0 +1,63 @@
+.tabContainer {
+    display: flex;
+    flex-direction: column-reverse;
+
+    &__headers {
+        display: flex;
+         justify-content: center;
+
+         &--tabs {
+
+            .tabs-title{
+                a {
+                    font-size: 2rem;
+                    color: white;
+        
+                    &:focus, [aria-selected=true] {
+                        border-bottom: 5px solid yellow;
+                        background: transparent;
+                    }
+                }
+            } 
+         }
+    }
+
+    &__content {
+        border: none;
+
+        .tabs-panel {
+            background-color: black;
+            color: white;
+         }
+     }
+}
+ 
+//  .tabs-content {
+//     border: none;
+//  }
+ 
+//  .tabs-panel {
+//     background-color: black;
+//     color: white;
+//  }
+ 
+// .tabContent__tabs {
+//      display: flex;
+//      justify-content: center;
+//  }
+ 
+//  .tabs {
+//     background-color: black;
+//     border: none;
+//  }
+ 
+ 
+//  .tabs-title>a:focus, .tabs-title>a[aria-selected=true] {
+//     border-bottom: 5px solid yellow;
+//     background: transparent;
+//  }
+ 
+//  .tabs-title>a {
+//     font-size: 2rem;
+//     color: white;
+//  }
