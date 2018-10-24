@@ -11,32 +11,64 @@
 </head>
 
 <body>
-    <!-- <header class="tickerGrid ticker frosty">Welcome to Alachua Cou
+    <header class="tickerGrid ticker frosty">Welcome to Alachua Cou
             <div class="circle"></div>
-    </header> -->
+    </header>
     <main>
-
-            <ul class="tabs" data-tabs id="shelter-tabs">
+    
+        <div class="tabContent">  
+            <div class="tabContent--container">
+                <ul class="tabs" data-tabs id="shelter-tabs">
                     <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
                     <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
-                  </ul>
-              
-                  <div class="tabs-content" data-tabs-content="shelter-tabs">
-                    <div class="tabs-panel is-active" id="panel1">
-                      <p>One</p>
-                      <p>Check me out! I'm a super cool Tab panel with text content!</p>
-                    </div>
-                    <div class="tabs-panel" id="panel2">
-                      <p>Two</p>
-                      <p>Check me out! I'm a super cool Tab panel with text content!</p>
-                    </div>
+                </ul>
+            </div>
+            
+            <div class="tabs-content" data-tabs-content="shelter-tabs">
+                <div class="tabs-panel is-active" id="panel1">
+                    <p>One</p>
+                    <p>Check me out! I'm a super cool Tab panel with text content!</p>
                 </div>
+                <div class="tabs-panel" id="panel2">
+                    <p>Two</p>
+                    <p>Check me out! I'm a super cool Tab panel with text content!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="tabContent">  
+                <div class="tabContent--container"> 
+                   <ul class="tabs" data-tabs id="example-tabs">
+                      <li class="tabs-title is-active">
+                          <a aria-selected="true" href="#panel1">Summary</a>
+                      </li>
+                      <li class="tabs-title">
+                          <a href="#panel2">Open Opportunities</a>
+                      </li>
+                   </ul>   
+               </div> 
+               <div class="tabs-content" data-tabs-content="example-tabs">    
+                  <div class="tabs-panel is-active" id="panel1">
+                     <h3>This is the first tab</h3>
+                     <div>
+                        Addition tab 1 content here.
+                     </div>         
+                  </div>
+            
+                  <div class="tabs-panel" id="panel2">
+                     <h3>Second Content</h3>
+                     <div>
+                        Addition tab 2 content here.
+                     </div>         
+                  </div>
+               </div>      
+            </div>    -->
        
-        <!-- <ul class="cards--shelter">
+         <!-- <ul class="cards--shelter">
             <li class="cards--shelter__item">
                 <div class="shelter--space">
                     <div class="shelter__image"></div>
-                    <div class="shelter__content">
+                    <div c=lass="shelter__content">
                         <div class="shelter__content--title"></div>
                         <p class="shelter__content--specs"></p>
                         <p class="shelter__content--specs"></p>
@@ -48,7 +80,7 @@
                     <p data-id=""></p>
                 </div>
             </li>
-        </ul> -->
+        </ul>  -->
     </main> 
     <footer></footer>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
