@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/alachuacounty/Kiosk#readme",
   "dependencies": {
-    "foundation-sites": "^6.5.0-rc.4"
+    "foundation-sites": "^6.5.0-rc.4",
+    "jquery": "^3.3.1"
   }
 }
