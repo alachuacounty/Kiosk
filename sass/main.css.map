@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "base/_reset.scss",
+        "settings/_variables.scss",
+        "settings/_colors.scss",
+        "settings/_mixins.scss",
+        "components/_animations.scss",
+        "components/_button.scss",
+        "components/_card.scss",
+        "base/_typography.scss",
+        "base/_layout.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
