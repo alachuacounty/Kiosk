@@ -6,9 +6,11 @@
         display: flex;
          justify-content: center;
 
-         &--tabs {
-
+         .tabs {
+            border: none;
+            
             .tabs-title{
+
                 a {
                     font-size: 2rem;
                     color: white;

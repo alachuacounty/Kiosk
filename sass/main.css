@@ -17,12 +17,16 @@
           justify-content: center;
 }
 
-.tabContainer__headers--tabs .tabs-title a {
+.tabContainer__headers .tabs {
+  border: none;
+}
+
+.tabContainer__headers .tabs .tabs-title a {
   font-size: 2rem;
   color: white;
 }
 
-.tabContainer__headers--tabs .tabs-title a:focus, .tabContainer__headers--tabs .tabs-title a [aria-selected=true] {
+.tabContainer__headers .tabs .tabs-title a:focus, .tabContainer__headers .tabs .tabs-title a [aria-selected=true] {
   border-bottom: 5px solid yellow;
   background: transparent;
 }
