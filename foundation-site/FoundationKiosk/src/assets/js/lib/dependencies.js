@@ -2,7 +2,7 @@
 import AOS from 'aos';
 import svgInjector from 'svg-injector-2';
 import slick from 'slick-carousel';
-import Granicus, { getEvents } from './aclib/Granicus';
+import { getEvents } from './aclib/Granicus';
 
 const deps = {
   AOS: AOS,
