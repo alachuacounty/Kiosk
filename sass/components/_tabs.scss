@@ -8,6 +8,9 @@
 
          .tabs {
             border: none;
+            width: 100%;
+            display: flex;
+            justify-content: center;
             
             .tabs-title{
 
@@ -24,11 +27,15 @@
          }
     }
 
+    .tabs-content {
+        background: transparent;
+    }
+
     &__content {
         border: none;
 
         .tabs-panel {
-            background-color: black;
+            background-color: rgb(36,36,36);
             color: white;
          }
      }

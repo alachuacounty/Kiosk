@@ -19,6 +19,13 @@
 
 .tabContainer__headers .tabs {
   border: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .tabContainer__headers .tabs .tabs-title a {
@@ -31,12 +38,16 @@
   background: transparent;
 }
 
+.tabContainer .tabs-content {
+  background: transparent;
+}
+
 .tabContainer__content {
   border: none;
 }
 
 .tabContainer__content .tabs-panel {
-  background-color: black;
+  background-color: #242424;
   color: white;
 }
 /*# sourceMappingURL=main.css.map */
