@@ -10,6 +10,7 @@
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
   "dependencies": {
+    "@types/slick-carousel": "^1.6.32",
     "aos": "^2.2.0",
     "foundation-sites": "~6.4.1",
     "jquery": "^3.2.1",
