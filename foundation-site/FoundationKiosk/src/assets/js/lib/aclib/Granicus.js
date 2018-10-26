@@ -1,5 +1,5 @@
 "use strict";
-
+// Granicus.js
 function getEvents() {
     var rsgranicus = function (events) { };
     fetch('https://secure.alachuacounty.us/KioskWebApi/api/Granicus?param=events&folderId=none', { method: "POST" })

@@ -10,7 +10,7 @@ import Foundation from 'foundation-sites';
 
 import 'tablesaw/dist/tablesaw.jquery';
 import libs from './lib/dependencies';
-import { getEvents } from './lib/aclib/Granicus';
+import { getEvents } from './lib/aclib/Granicus.js';
 window.libs = libs;
 
 $(document).foundation();
