@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "mappings": "AQAA,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,cAAc;CAuCjC;;AArCI,AAAD,sBAAU,CAAC;EACP,OAAO,EAAE,IAAI;EACZ,eAAe,EAAE,MAAM;CAqB3B;;AAvBA,AAII,sBAJK,CAIL,KAAK,CAAC;EACH,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CAczB;;AAtBL,AAYW,sBAZF,CAIL,KAAK,CAMF,WAAW,CAEP,CAAC,CAAC;EACE,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,KAAK;CAMf;;AApBZ,AAgBe,sBAhBN,CAIL,KAAK,CAMF,WAAW,CAEP,CAAC,AAII,MAAM,EAhBtB,sBAAS,CAIL,KAAK,CAMF,WAAW,CAEP,CAAC,EAIY,AAAA,aAAC,CAAD,IAAC,AAAA,EAAoB;EAC1B,aAAa,EAAE,gBAAgB;EAC/B,UAAU,EAAE,WAAW;CAC1B;;AAvBrB,AA6BI,aA7BS,CA6BT,aAAa,CAAC;EACV,UAAU,EAAE,WAAW;CAC1B;;AAEA,AAAD,sBAAU,CAAC;EACP,MAAM,EAAE,IAAI;CAMd;;AAPD,AAGG,sBAHM,CAGN,WAAW,CAAC;EACR,gBAAgB,EAAE,OAAa;EAC/B,KAAK,EAAE,KAAK;CACd",
+    "sources": [
+        "main.scss",
+        "base/_reset.scss",
+        "settings/_variables.scss",
+        "settings/_colors.scss",
+        "settings/_mixins.scss",
+        "components/_animations.scss",
+        "components/_button.scss",
+        "components/_card.scss",
+        "components/_tabs.scss",
+        "base/_typography.scss",
+        "base/_layout.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
