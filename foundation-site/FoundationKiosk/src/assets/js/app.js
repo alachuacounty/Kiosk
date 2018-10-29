@@ -10,14 +10,15 @@ import Foundation from 'foundation-sites';
 
 import 'tablesaw/dist/tablesaw.jquery';
 import libs from './lib/dependencies';
-import { getEvents } from './lib/aclib/Granicus.js';
+import { getEvents } from './lib/aclib/Granicus';
+
 window.libs = libs;
 
 $(document).foundation();
 
 libs.AOS.init();
-
 getEvents();
+
 
 // SVG Injector
 // Elements to inject
