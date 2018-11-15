@@ -6,22 +6,22 @@
 
 @font-face {
     font-family: 'SF Pro Display-Reg';
-    src: url(./fonts/SF-Pro-Display-Regular.otf);
+    src: url(../fonts/SF-Pro-Display-Regular.otf);
 }
 
 @font-face {
     font-family: 'SF Pro Display-SB';
-    src: url(./fonts/SF-Pro-Display-Semibold.otf);
+    src: url(../fonts/SF-Pro-Display-Semibold.otf);
 }
 
 @font-face {
     font-family: 'SFProText-LT';
-    src: url(./fonts/SF-Pro-Text-Light.otf);
+    src: url(../fonts/SF-Pro-Text-Light.otf);
 }
 
 @font-face {
     font-family: 'SFProText-Reg';
-    src: url(./fonts/SF-Pro-Text-Regular.otf);
+    src: url(../fonts/SF-Pro-Text-Regular.otf);
 }
 
 /* @font-face {
