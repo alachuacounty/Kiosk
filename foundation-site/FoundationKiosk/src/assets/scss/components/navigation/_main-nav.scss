@@ -26,6 +26,10 @@
     }
 
     &__icon {
-        font-size: 30px;
+        font-size: $font-30px;
+    }
+
+    &__text {
+        font-size: $font-20px;
     }
 }
