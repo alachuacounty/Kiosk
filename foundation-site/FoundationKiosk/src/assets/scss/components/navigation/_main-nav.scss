@@ -1,9 +1,8 @@
 .main-nav {
     height: 100%;
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    justify-content: center;
+    //display: flex;
+    //align-items: center;
+    //justify-content: center;
         
     &--container {
         position: absolute; 
@@ -19,6 +18,14 @@
 
     &__button {
         width: 20vh;
-        color: white;
+        border-left: 1px solid gray;
+
+        a{
+            color: white;
+        }
+    }
+
+    &__icon {
+        font-size: 30px;
     }
 }
