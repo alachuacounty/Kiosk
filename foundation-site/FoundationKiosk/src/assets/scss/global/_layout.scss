@@ -6,7 +6,7 @@
 .directory {
     width: 100%;
 
-    &--grid {
+    &--spacer {
 
     }
 
@@ -14,8 +14,12 @@
         width: 60%;
     }
 
-    &__dir {
+    &--grid {
         width: 40%;
         float: right;
+    }
+    //Look into reorganizing styles.css into app.css in order for this to register. This will fix spaced directory on directory.html
+    &__dir {
+        grid-template-rows: unset;
     }
 }
