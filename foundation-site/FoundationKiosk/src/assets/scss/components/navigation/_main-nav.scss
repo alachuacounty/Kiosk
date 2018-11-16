@@ -1,0 +1,23 @@
+.main-nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+        
+    &--container {
+        position: absolute; 
+        bottom: 0;
+        width: 100%;
+        height: 8vh;
+        margin-bottom: -.25%;
+    }
+
+    &--spacer {
+
+    }
+
+    &__button {
+
+    }
+}
