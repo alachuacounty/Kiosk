@@ -1,10 +1,10 @@
 <footer class="main-nav--container">
     <nav class="frosty2 menu align-center icons icon-top main-nav">
-            <li class="main-nav__button"><a href="#"><i class="fas fa-address-book main-nav__icon"></i> <span class="main-nav__text">Directory</span></a></li>
-            <li class="main-nav__button"><a href="#"><i class="fas fa-map-marker-alt main-nav__icon"></i> <span class="main-nav__text">Maps</span></a></li>
-            <li class="main-nav__button"><a href="#"><i class="fas fa-home main-nav__icon"></i><span class="main-nav__text">Home</span></a></li>
-            <li class="main-nav__button"><a href="#"><i class="far fa-newspaper main-nav__icon"></i><span class="main-nav__text">Job Postings</span></a></li>
-            <li class="main-nav__button"><a href="#"><i class="fas fa-video main-nav__icon"></i><span class="main-nav__text">Videos</span></a></li>
+            <li class="main-nav__button {{#ifpage 'directory'}}is-active{{/ifpage}}"><a href="directory.html"><i class="fas fa-address-book main-nav__icon"></i> <span class="main-nav__text">Directory</span></a></li>
+            <li class="main-nav__button {{#ifpage 'maps'}}is-active{{/ifpage}}"><a href="maps.html"><i class="fas fa-map-marker-alt main-nav__icon"></i> <span class="main-nav__text">Maps</span></a></li>
+            <li class="main-nav__button {{#ifpage 'home'}}is-active{{/ifpage}}"><a href="home.html" class=""><i class="fas fa-home main-nav__icon"></i><span class="main-nav__text">Home</span></a></li>
+            <li class="main-nav__button {{#ifpage 'job-postings'}}is-active{{/ifpage}}"><a href="job-postings.html"><i class="far fa-newspaper main-nav__icon"></i><span class="main-nav__text">Job Postings</span></a></li>
+            <li class="main-nav__button {{#ifpage 'videos'}}is-active{{/ifpage}}"><a href="videos.html"><i class="fas fa-video main-nav__icon"></i><span class="main-nav__text">Videos</span></a></li>
     </nav>
 </footer>
 

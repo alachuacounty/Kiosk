@@ -9,7 +9,6 @@
         bottom: 0;
         width: 100%;
         height: 8vh;
-        margin-bottom: -.25%;
     }
 
     &--spacer {
@@ -20,8 +19,14 @@
         width: 20vh;
         border-left: 1px solid gray;
 
+        //Active state in nodemodules>foundation>components>scss>_menu>.menu .is-active > a
+        &:last-child {
+            border-right: 1px solid gray;
+        }
+
         a{
             color: white;
+            width: 100%;
         }
     }
 
@@ -31,5 +36,6 @@
 
     &__text {
         font-size: $font-20px;
+        text-align: center;
     }
 }
