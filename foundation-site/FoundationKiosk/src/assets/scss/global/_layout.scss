@@ -3,3 +3,19 @@
     position: relative;
 }
 
+.directory {
+    width: 100%;
+
+    &--grid {
+
+    }
+
+    &__map {
+        width: 60%;
+    }
+
+    &__dir {
+        width: 40%;
+        float: right;
+    }
+}
