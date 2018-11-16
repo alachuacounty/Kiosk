@@ -364,3 +364,10 @@ table tr td {
 	font-family: 'SFProText-Reg';
 	font-size: 1.1em;
 }
+
+/* Override styles */
+
+.menu .is-active a {
+	background-color: rgba(235,191,8,.5);
+    border-bottom: 5px solid #FFCC00;
+}
