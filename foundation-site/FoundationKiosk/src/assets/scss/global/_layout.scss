@@ -18,8 +18,12 @@
         width: 40%;
         float: right;
     }
-    //Look into reorganizing styles.css into app.css in order for this to register. This will fix spaced directory on directory.html
-    &__dir {
+    //Controls the grid-row-template values for directory on Screensaver & Directory screens [see directory partial #ifpage helper for more info]
+    &-gridrows--screensaver {
+        grid-template-rows: 2fr 2fr 2fr 2fr 1fr;
+    }
+    
+    &-gridrows--directory {
         grid-template-rows: unset;
     }
 }
