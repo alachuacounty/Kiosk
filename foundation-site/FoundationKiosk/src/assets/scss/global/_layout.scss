@@ -27,3 +27,66 @@
         grid-template-rows: unset;
     }
 }
+
+//Maps Screen
+
+.map {
+
+    &--container {
+        width: 90%;
+        margin: auto;
+    }
+
+    &--spacer {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100%;
+    }
+
+    &__tabs {
+        width: 15%;
+
+        ul {
+            border: 0;
+            background: none;
+
+            li {
+                font-family: 'SF Pro Display-Bold', sans-serif;
+                text-shadow: none;
+
+                a {
+                    color: white;
+                    font-size: $font-18px;
+                    text-align: right;
+                    letter-spacing: .5px;
+                    line-height: 1.25;
+                }
+            }
+        }
+    }
+
+    &__content {
+        width: 85%;
+
+        &__images {
+            border: 0;
+            background: none;
+
+            &--container {
+                padding: 0;
+
+                img {
+                    border: 0;
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.tabs-title > a:focus, .tabs-title > a[aria-selected="true"] {
+    background: #e6e6e6;
+    color: #242424;
+}

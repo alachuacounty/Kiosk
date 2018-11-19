@@ -15,6 +15,11 @@
 }
 
 @font-face {
+    font-family: 'SF Pro Display-Bold';
+    src: url(../fonts/SF-Pro-Display-Bold.otf);
+}
+
+@font-face {
     font-family: 'SFProText-LT';
     src: url(../fonts/SF-Pro-Text-Light.otf);
 }
@@ -132,6 +137,7 @@ p {
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-end;
+	margin-bottom: 1%;
 }
 
 .circle {
