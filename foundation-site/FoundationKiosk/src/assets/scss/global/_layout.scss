@@ -101,3 +101,24 @@
     background: #e6e6e6;
     color: #242424;
 }
+
+//Job Postings
+
+.carousel {
+    height: 80vh;
+
+    &--container {
+
+        .job-cards {
+            padding: 0 2%;
+
+            &--spacer {
+                display: flex;
+            }
+
+            &__item {
+                padding: 2%;
+            }
+        }
+    }
+}
