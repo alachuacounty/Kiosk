@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous">
     <link rel="stylesheet" href="{{root}}assets/css/foundation.css">
-    <link rel="stylesheet" type="text/css" href="{{root}}assets/css/glider.min.css">
+    {{#ifpage 'job-postings'}}
+    <link rel="stylesheet" type="text/css" media="screen" href="https://glidejs.com/css/app.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.2.3/dist/css/glide.core.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{root}}assets/css/glide.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="{{root}}assets/js/glide.js"></script>
+    {{/ifpage}}
     <link rel="stylesheet" href="{{root}}assets/css/app.css"> 
     <link rel="stylesheet" href="{{root}}assets/css/styles.css">
     <!--Weather Widget-->
