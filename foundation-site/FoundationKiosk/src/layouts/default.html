@@ -11,31 +11,17 @@
       crossorigin="anonymous">
     <link rel="stylesheet" href="{{root}}assets/css/foundation.css">
     {{#ifpage 'job-postings'}}
-    <link rel="stylesheet" type="text/css" media="screen" href="https://glidejs.com/css/app.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.2.3/dist/css/glide.core.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="{{root}}assets/css/glide.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script src="{{root}}assets/js/glide.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{root}}assets/css/slick-test.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
     {{/ifpage}}
     <link rel="stylesheet" href="{{root}}assets/css/app.css"> 
     <link rel="stylesheet" href="{{root}}assets/css/styles.css">
     <!--Weather Widget-->
     <!-- <script type='text/javascript' src='https://darksky.net/widget/default-small/29.6519,-82.325/us12/en.js?width=100%&height=70&title=Full Forecast&textColor=ffffff&bgColor=transparent&transparency=true&skyColor=ffffff&fontFamily=Sans-Serif&customFont=&units=us'></script> -->
-    {{#ifpage 'job-postings'}}
-    <script src="{{root}}assets/js/glider.min.js"></script>
-    <script>
-      new Glider(document.querySelector('.glider'), {
-        slidesToScroll: 1,
-        slidesToShow: 5.5,
-        draggable: true,
-        dots: '.dots',
-        arrows: {
-          prev: '.glider-prev',
-          next: '.glider-next'
-        }
-      });
-    </script>
-    {{/ifpage}}
   </head>
   <body class="container">
 
@@ -45,6 +31,10 @@
 
     {{>main-nav}}
 
+    {{#ifpage 'job-postings'}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="{{root}}/assets/js/slick-test.js"></script>
+    {{/ifpage}}
     <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>
