@@ -85,23 +85,11 @@
 .slick-arrow.slick-hidden{
     display:none
 }
-/*# sourceMappingURL=slick.min.css.map */
 
 /*Slick Basic Styles End*/
 
 /*Slick Theme Start*/
 
-@charset 'UTF-8';
-.slick-loading .slick-list{
-    background:#fff url(ajax-loader.gif) center center no-repeat
-}
-@font-face{
-    font-family:slick;
-    font-weight:400;
-    font-style:normal;
-    src:url(fonts/slick.eot);
-    src:url(fonts/slick.eot?#iefix) format('embedded-opentype'),url(fonts/slick.woff) format('woff'),url(fonts/slick.ttf) format('truetype'),url(fonts/slick.svg#slick) format('svg')
-}
 .slick-next,.slick-prev{
     font-size:0;
     line-height:0;
@@ -227,30 +215,24 @@
     opacity:.75;
     color:#000
 }
-/*# sourceMappingURL=slick-theme.min.css.map */
 
 /*Slick Them End*/
 
 /*CUSTOM STYLES*/
-body {
-  background-color: teal;
-}
 .slider-test{
   display: flex;
   justify-content: space-evenly;
-  bordeR: 1px solid brown;
-  width: 90%;
-  height: 75vh;
+  bordeR: 1px solid green;
+  height: 60vh;
   margin: auto;
 }
 
-.card {
-  background-color: pink;
+.slick-card {
   color: white;
-  max-width: 200px;
-  height: auto;
+  max-width: 450px;
+  height: 600px;
   text-align: center;
-  padding: 5%;
+  border-radius: 10px;
 }
 
 .slick-next, .slick-prev {
@@ -281,5 +263,4 @@ body {
 }
 
 .slider-test .slick-center h3 {
-  background-color: black;
 }

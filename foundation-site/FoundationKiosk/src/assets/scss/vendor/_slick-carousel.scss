@@ -173,7 +173,7 @@ $slick-opacity-not-active: 0.25 !default;
     cursor: pointer;
     background: transparent;
     color: transparent;
-    top: 50%;
+    top: 105%;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -203,7 +203,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: -25px;
+    left: 0;
     [dir="rtl"] & {
         left: auto;
         right: -25px;
@@ -217,7 +217,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: -25px;
+    right: 50px;
     [dir="rtl"] & {
         left: -25px;
         right: auto;
@@ -240,7 +240,7 @@ $slick-opacity-not-active: 0.25 !default;
     position: absolute;
     bottom: -25px;
     list-style: none;
-    display: block;
+    display: none;
     text-align: center;
     padding: 0;
     margin: 0;

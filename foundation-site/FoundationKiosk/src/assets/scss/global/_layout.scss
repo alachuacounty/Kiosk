@@ -1,6 +1,35 @@
 .container {
     min-height: 100vh;
     position: relative;
+
+    &--overlay {
+        height: 100vh;
+        z-index: -1;
+        background: inherit;
+        color: #FFF;
+        overflow: hidden;
+        position: relative;
+        text-shadow: 0px 1px 2px rgba(0,0,0,0.65);
+
+        &::before {
+            -webkit-filter: blur(10px);
+            -moz-filter: blur(10px);
+            -o-filter: blur(10px);
+            -ms-filter: blur(10px);
+            content: '';
+            filter: blur(10px);
+            background: inherit;
+            bottom: 0;
+            box-shadow: inset 0 0 14px 3000px rgba(36, 36, 36, 0.5);
+            height: 120%;
+            left: -10%;
+            position: absolute;
+            right: 0;
+            top: -10%;
+            width: 120%;
+            z-index: -1;
+        }
+    }
 }
 
 .directory {
@@ -104,26 +133,39 @@
 
 //Job Postings
 
-.carousel {
-    height: 80vh;
+.job {
+    width: 85%;
+    margin: auto;
+    z-index: 9999;
+    position: absolute;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
 
-    &--container {
+    &__header {
+        color: white;
+        width: 100%;
+        margin: 0 auto 2% 8%;
+    }
 
-        .job-cards {
-            padding: 0 2%;
+    &__slider {
+        width: 100%;
+        left: 8%;
 
-            &--spacer {
-                display: flex;
-            }
+        .slick-list{
+            height: 60vh;
+        }
 
-            &__item {
-                padding: 2%;
-            }
+        .slick-slide {
+            width: 500px;
+        }
+
+        .slick-card {
+            background-color: rgba (0,0,0,.75);
+        }
+
+        .slick-center .slick-card {
+            background-color: black;
         }
     }
-}
-
-.job-card {
-    width: 33%;
-    padding:2%;
 }

@@ -22,11 +22,13 @@
   </head>
   <body class="container">
 
-    {{> ticker}}
+      {{> ticker}}
 
-    {{> body}}
-
-    {{>main-nav}}
+      <div class="container--overlay"></div>
+      
+      {{> body}}
+      
+      {{>main-nav}}
 
     {{#ifpage 'job-postings'}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
