@@ -153,7 +153,12 @@
     &__header {
         color: white;
         width: 100%;
-        margin: 0 auto 2% 8%;
+        margin: 0 auto 3% 8%;
+
+        &__text {
+            font-size: 1.25rem;
+            line-height: 1.4;
+        }
     }
 
     &__slider {
@@ -185,10 +190,17 @@
     padding: 3% 5%;
 
     &__title {
-
+        line-height: 1;
+        font-size: 2rem;
+        font-family: 'SF Compact Display';
+        height: 8vh;
     }
 
     &__content {
+
+        &:first-child{
+            margin-bottom: 3%;
+        }
 
         &--container {
             overflow: scroll;
@@ -196,11 +208,17 @@
         }
 
         &__title {
-
+            font-family: 'SF Pro Display';
+            font-size: 1.25rem;
+            letter-spacing: .25px;
         }
 
         &__text {
-
+            font-family: 'SF Pro Display';
+            font-size: 1.1rem;
+            font-weight: 200;
+            line-height: 1.35;
+            letter-spacing: .5px;
         }
     }
 }
