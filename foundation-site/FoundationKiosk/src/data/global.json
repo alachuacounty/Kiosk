@@ -1,0 +1,52 @@
+{
+    "current-openings": [
+        {
+            "spotlight": true,
+            "title": "",
+            "categories": true,
+            "image": true,
+            "qualifications": "",
+            "summary": ""
+        },
+        {
+            "spotlight": false,
+            "title": "",
+            "categories": false,
+            "image": false,
+            "qualifications": "",
+            "summary": ""
+        },
+        {
+            "spotlight": false,
+            "title": "",
+            "categories": false,
+            "image": false,
+            "qualifications": "",
+            "summary": ""
+        },
+        {
+            "spotlight": false,
+            "title": "",
+            "categories": false,
+            "image": false,
+            "qualifications": "",
+            "summary": ""
+        },
+        {
+            "spotlight": false,
+            "title": "",
+            "categories": false,
+            "image": false,
+            "qualifications": "",
+            "summary": ""
+        },
+        {
+            "spotlight": false,
+            "title": "",
+            "categories": false,
+            "image": false,
+            "qualifications": "",
+            "summary": ""
+        }
+    ]
+}
