@@ -3,7 +3,7 @@
     position: relative;
 
     &--overlay {
-        height: 90vh;
+        height: 86.75vh;;
         z-index: -1;
         background: inherit;
         color: #FFF;
@@ -34,6 +34,8 @@
 
 .directory {
     width: 100%;
+    position: absolute;
+    top: 5%;
 
     &--spacer {
 
@@ -64,6 +66,10 @@
     &--container {
         width: 90%;
         margin: auto;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5%;
     }
 
     &--spacer {
