@@ -139,6 +139,8 @@
 
 //Job Postings
 
+    //Body Content & Slider
+            
 .job {
     width: 85%;
     margin: auto;
@@ -173,5 +175,23 @@
         .slick-center .slick-card {
             background-color: black;
         }
+    }
+}
+
+    //Job Cards
+
+.job-card {
+
+    &__title {
+
+    }
+
+    &__content {
+
+        &__title {
+
+        }
+
+        &__text
     }
 }
