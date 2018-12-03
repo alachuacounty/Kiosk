@@ -222,7 +222,6 @@
 .slider-test{
   display: flex;
   justify-content: space-evenly;
-  bordeR: 1px solid green;
   height: 60vh;
   margin: auto;
 }

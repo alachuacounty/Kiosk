@@ -12,14 +12,18 @@ meta-title: Job Postings
   <section class="job__slider slider-test" id="job-slider">
     {{#each global.current-openings}}
     <article class="slick-card frosty2 job-card">
-      <h2 class="job-card__title">{{title}}</h2>
-      <div class="job-card__content">
-        <h3 class="job-card__content__title">Minimum Qualifications</h3>
-        <p class="job-card__content__text">{{qualifications}}</p>
-      </div>
-      <div class="job-card__content">
-        <h3 class="job-card__content__title">Position Summary</h3>
-        <p class="job-card__content__text">{{qualifications}}</p>
+      <div>
+        <h2 class="job-card__title">{{title}}</h2>
+        <div class="job-card__content--container">
+          <div class="job-card__content">
+            <h3 class="job-card__content__title">Minimum Qualifications</h3>
+            <p class="job-card__content__text">{{qualifications}}</p>
+          </div>
+          <div class="job-card__content">
+            <h3 class="job-card__content__title">Position Summary</h3>
+            <p class="job-card__content__text">{{qualifications}}</p>
+          </div>
+        </div>
       </div>
     </article>
     {{/each}}
