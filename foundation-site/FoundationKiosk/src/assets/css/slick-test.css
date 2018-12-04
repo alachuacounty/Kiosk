@@ -108,11 +108,7 @@
     outline:0;
     background:0 0
 }
-.slick-next:focus,.slick-next:hover,.slick-prev:focus,.slick-prev:hover{
-    color:transparent;
-    outline:0;
-    background:0 0
-}
+
 .slick-next:focus:before,.slick-next:hover:before,.slick-prev:focus:before,.slick-prev:hover:before{
     opacity:1
 }
