@@ -162,6 +162,14 @@ $slick-opacity-not-active: 0.25 !default;
 
 /* Arrows */
 
+.slick-next:before {
+    margin: 2px 0 0 6px;
+}
+
+.slick-prev:before{
+    margin: 2px 0 0 3px;
+}
+
 .slick-prev,
 .slick-next {
     position: absolute;
@@ -202,7 +210,7 @@ $slick-opacity-not-active: 0.25 !default;
         font-size: 20px;
         line-height: 0;
         color: $slick-arrow-color;
-        opacity: $slick-opacity-default;
+        opacity: 1;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
