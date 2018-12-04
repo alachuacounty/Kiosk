@@ -1,6 +1,6 @@
 $('.slider-test').slick({
     centerMode: true,
-    centerPadding: '60px',
+    centerPadding: '45px',
     slidesToShow: 3,
     responsive: [
         {
