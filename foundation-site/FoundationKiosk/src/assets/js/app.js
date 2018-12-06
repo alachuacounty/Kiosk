@@ -17,8 +17,6 @@ window.libs = libs;
 $(document).foundation();
 
 libs.AOS.init();
-getEvents();
-
 
 // SVG Injector
 // Elements to inject
@@ -87,6 +85,9 @@ $(function () {
   $(document)
     .foundation()
     .trigger('enhance.tablesaw');
+
+    let events = getEvents(events);
+
 });
 
 var TablesawConfig = {
