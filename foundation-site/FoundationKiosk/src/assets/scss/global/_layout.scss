@@ -282,13 +282,14 @@
     margin: auto;
     color: white;
     height: 60vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    columns: 2;
+    overflow: hidden;
+
+    &--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
     &__item {
-        width: 50%;
         border-radius: 10px;
         padding: 20px;
         margin: 10px;
