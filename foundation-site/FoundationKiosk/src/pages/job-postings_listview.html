@@ -2,7 +2,7 @@
 meta-title: Job Postings
 ---
 
-<main class="job">
+<main class="job {{#ifpage 'job-postings_listview'}}job-list--spacer{{/ifpage}}">
   <section class="job__header">
     <h1 class="job__header__title">Current Openings</h1>
     <p class="job__header__text"><strong>For more information or to apply from home go to http://AlachuaCounty.us. <br>You can also apply in person
@@ -27,7 +27,16 @@ meta-title: Job Postings
       </article>
       {{/each}}
     </div>
-    
+  </section>
+  <section class="job-list__button">
+    <div class="job-list__button__navigation">
+      <button class="job-list__button__navigation--up" aria-label="Up" type="button"></button>
+      <button class="job-list__button__navigation--select" type="button">Select</button>
+      <button class="job-list__button__navigation--down" aria-label="Down" type="button"></button>
+    </div>
+    <div class="job-list__button__view">
+      <button type="button" ></button>
+    </div>
   </section>
 </main>
 

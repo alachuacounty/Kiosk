@@ -2,32 +2,15 @@
 meta-title: Job Postings
 ---
 
-<main class="job">
+<main class="job job-list--spacer">
   <section class="job__header">
     <h1 class="job__header__title">Current Openings</h1>
     <p class="job__header__text"><strong>For more information or to apply from home go to http://AlachuaCounty.us. <br>You can also apply in person
         with Human Resources.</strong></p>
   </section>
   
-  <section class="job__slider slider-test" id="job-slider">
-    {{#each global.current-openings}}
-    <article class="slick-card frosty3 job-card">
-      <div>
-        <h2 class="job-card__title">{{title}}</h2>
-        <div class="job-card__content--container">
-          <div class="job-card__content">
-            <h3 class="job-card__content__title">Minimum Qualifications</h3>
-            <p class="job-card__content__text">{{qualifications}}</p>
-          </div>
-          <div class="job-card__content">
-            <h3 class="job-card__content__title">Position Summary</h3>
-            <p class="job-card__content__text">{{qualifications}}</p>
-          </div>
-        </div>
-      </div>
-    </article>
-    {{/each}}
-  </section>
+  {{>job-list}}
+
 </main>
 
       

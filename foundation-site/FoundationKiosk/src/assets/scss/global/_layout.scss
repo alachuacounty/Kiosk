@@ -277,12 +277,19 @@
 
         //Job List
 
+$jobs-up-arrow: "\25B2";
+$jobs-down-arrow: "\25BC";
+
 .job-list {
     width: 85%;
     margin: auto;
     color: white;
     height: 60vh;
-    overflow: hidden;
+    overflow: scroll;
+
+    &--spacer {
+        width: 100%;
+    }
 
     &--grid {
         display: grid;
@@ -298,6 +305,61 @@
             font-size: 2.25rem;
             font-family: 'SF Compact Display';
             margin-bottom: 0;
+        }
+    }
+
+    &__button {
+        width: 84%;
+        margin: 1% auto;
+        display: flex;
+        justify-content: space-between;
+
+        &__navigation {
+
+            &--up, &--select, &--down {
+            color: white;
+            background-color: rgba(33, 33, 33, 0.8);
+            border-radius: 8px;
+            padding: 10px;
+            cursor: pointer;
+            }
+
+            &--up {
+                width: 50px;
+
+                &::before {
+                    content: $jobs-up-arrow;
+                }
+            }
+
+            &--select {
+                font-family: 'SF Pro Text';
+                width: 100px;
+                letter-spacing: .5px;
+            }
+
+            &--down {
+                width: 50px;
+
+                &::before {
+                    content: $jobs-down-arrow;
+                }
+            }
+        }
+
+        &__view {
+
+            button {
+                color: white;
+                background-color: rgba(33, 33, 33, 0.8);
+                border-radius: 8px;
+                padding: 10px;
+                cursor: pointer;
+                font-family: 'SF Pro Text';
+                width: 100px;
+                min-height: 36px;
+                letter-spacing: .5px;
+            }
         }
     }
 }
