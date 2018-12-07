@@ -9,7 +9,55 @@ meta-title: Job Postings
         with Human Resources.</strong></p>
   </section>
   
-  {{>job-list}}
+  <section class="job__slider slider-test" id="job-slider">
+    {{#each global.current-openings}}
+    <article class="slick-card frosty3 job-card">
+        <div>
+            <h2 class="job-card__title">{{title}}</h2>
+            <div class="job-card__content--container">
+                <div class="job-card__content">
+                    <h3 class="job-card__content__title">Minimum Qualifications</h3>
+                    <p class="job-card__content__text">{{qualifications}}</p>
+                </div>
+                <div class="job-card__content">
+                    <h3 class="job-card__content__title">Position Summary</h3>
+                    <p class="job-card__content__text">{{qualifications}}</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    {{/each}}
+</section>
+  
+  <section class="job-list">
+    <div class="job-list--grid">
+      {{#each global.current-openings}}
+      <article class="job-list__item frosty">
+        <h2 class="job-list__item__title">{{title}}</h2>
+        <!-- <div class="job-list__content--container">
+                  <div class="job-list__content">
+                    <h3 class="job-list__content__title">Minimum Qualifications</h3>
+                    <p class="job-list__content__text">{{qualifications}}</p>
+                  </div>
+                  <div class="job-list__content">
+                    <h3 class="job-list__content__title">Position Summary</h3>
+                    <p class="job-list__content__text">{{qualifications}}</p>
+                  </div>
+                </div> -->
+      </article>
+      {{/each}}
+    </div>
+  </section>
+  <section class="job-list__button">
+    <div class="job-list__button__navigation">
+      <button class="job-list__button__navigation--up" aria-label="Up" type="button"></button>
+      <button class="job-list__button__navigation--select" type="button">Select</button>
+      <button class="job-list__button__navigation--down" aria-label="Down" type="button"></button>
+    </div>
+    <div class="job-list__button__view">
+      <button type="button" id="viewTrigger"></button>
+    </div>
+  </section>
 
 </main>
 

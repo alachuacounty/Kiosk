@@ -286,6 +286,7 @@ $jobs-down-arrow: "\25BC";
     color: white;
     height: 60vh;
     overflow: scroll;
+    display: none;
 
     &--spacer {
         width: 100%;
@@ -309,12 +310,16 @@ $jobs-down-arrow: "\25BC";
     }
 
     &__button {
+        /*Styles when on Default(slider) view*/
         width: 84%;
         margin: 1% auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
+        /*Styles when on List view
+        justify-content: space-between;*/
 
         &__navigation {
+            display: none;
 
             &--up, &--select, &--down {
             color: white;
@@ -359,6 +364,8 @@ $jobs-down-arrow: "\25BC";
                 width: 100px;
                 min-height: 36px;
                 letter-spacing: .5px;
+                /*Styles when on Default(slider) view*/
+                margin-right: 1%;
             }
         }
     }
