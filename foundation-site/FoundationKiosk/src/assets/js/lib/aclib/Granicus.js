@@ -1,8 +1,6 @@
 "use strict";
 // Granicus.js
 
-let evtBox = document.querySelector("#granicus-events");
-
 function getEvents(events) {
 
     fetch('https://secure.alachuacounty.us/KioskWebApi/api/Granicus?param=events&folderId=none', { method: "POST" })
@@ -13,6 +11,8 @@ function getEvents(events) {
         
         //Events are returned normally latest to newest so they must be reversed
         events = JSON.parse(events).reverse();
+
+        let evtBox = document.querySelector("#granicus-events");
 
         events.forEach( ev => {
 
