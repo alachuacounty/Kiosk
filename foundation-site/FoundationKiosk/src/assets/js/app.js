@@ -99,3 +99,9 @@ $('[data-app-dashboard-toggle-shrink]').on('click', function(e) {
   e.preventDefault();
   $(this).parents('.app-dashboard').toggleClass('shrink-medium').toggleClass('shrink-large');
 });
+
+//Test Job Postings View Trigger
+
+var test = document.getElementById("viewTrigger").addEventListener("click", function (e) {
+  console.log("It's working!")
+}, false);
