@@ -277,18 +277,27 @@
 
         //Job List
 
+$jobs-up-arrow: "\25B2";
+$jobs-down-arrow: "\25BC";
+
 .job-list {
     width: 85%;
     margin: auto;
     color: white;
     height: 60vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    columns: 2;
+    overflow: scroll;
+    display: none;
+
+    &--spacer {
+        width: 100%;
+    }
+
+    &--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
     &__item {
-        width: 50%;
         border-radius: 10px;
         padding: 20px;
         margin: 10px;
@@ -297,6 +306,67 @@
             font-size: 2.25rem;
             font-family: 'SF Compact Display';
             margin-bottom: 0;
+        }
+    }
+
+    &__button {
+        /*Styles when on Default(slider) view*/
+        width: 84%;
+        margin: 1% auto;
+        display: flex;
+        justify-content: flex-end;
+        /*Styles when on List view
+        justify-content: space-between;*/
+
+        &__navigation {
+            display: none;
+
+            &--up, &--select, &--down {
+            color: white;
+            background-color: rgba(33, 33, 33, 0.8);
+            border-radius: 8px;
+            padding: 10px;
+            cursor: pointer;
+            }
+
+            &--up {
+                width: 50px;
+
+                &::before {
+                    content: $jobs-up-arrow;
+                }
+            }
+
+            &--select {
+                font-family: 'SF Pro Text';
+                width: 100px;
+                letter-spacing: .5px;
+            }
+
+            &--down {
+                width: 50px;
+
+                &::before {
+                    content: $jobs-down-arrow;
+                }
+            }
+        }
+
+        &__view {
+
+            button {
+                color: white;
+                background-color: rgba(33, 33, 33, 0.8);
+                border-radius: 8px;
+                padding: 10px;
+                cursor: pointer;
+                font-family: 'SF Pro Text';
+                width: 100px;
+                min-height: 36px;
+                letter-spacing: .5px;
+                /*Styles when on Default(slider) view*/
+                margin-right: 1%;
+            }
         }
     }
 }

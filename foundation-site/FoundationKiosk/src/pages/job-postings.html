@@ -2,7 +2,7 @@
 meta-title: Job Postings
 ---
 
-<main class="job">
+<main class="job job-list--spacer">
   <section class="job__header">
     <h1 class="job__header__title">Current Openings</h1>
     <p class="job__header__text"><strong>For more information or to apply from home go to http://AlachuaCounty.us. <br>You can also apply in person
@@ -12,22 +12,61 @@ meta-title: Job Postings
   <section class="job__slider slider-test" id="job-slider">
     {{#each global.current-openings}}
     <article class="slick-card frosty3 job-card">
-      <div>
-        <h2 class="job-card__title">{{title}}</h2>
-        <div class="job-card__content--container">
-          <div class="job-card__content">
-            <h3 class="job-card__content__title">Minimum Qualifications</h3>
-            <p class="job-card__content__text">{{qualifications}}</p>
-          </div>
-          <div class="job-card__content">
-            <h3 class="job-card__content__title">Position Summary</h3>
-            <p class="job-card__content__text">{{qualifications}}</p>
-          </div>
+        <div>
+            <h2 class="job-card__title">{{title}}</h2>
+            <div class="job-card__content--container">
+                <div class="job-card__content">
+                    <h3 class="job-card__content__title">Minimum Qualifications</h3>
+                    <p class="job-card__content__text">{{qualifications}}</p>
+                </div>
+                <div class="job-card__content">
+                    <h3 class="job-card__content__title">Position Summary</h3>
+                    <p class="job-card__content__text">{{qualifications}}</p>
+                </div>
+            </div>
         </div>
-      </div>
     </article>
     {{/each}}
+</section>
+  
+  <section class="job-list">
+    <div class="job-list--grid">
+      {{#each global.current-openings}}
+      <article class="job-list__item frosty">
+        <h2 class="job-list__item__title">{{title}}</h2>
+        <!-- <div class="job-list__content--container">
+                  <div class="job-list__content">
+                    <h3 class="job-list__content__title">Minimum Qualifications</h3>
+                    <p class="job-list__content__text">{{qualifications}}</p>
+                  </div>
+                  <div class="job-list__content">
+                    <h3 class="job-list__content__title">Position Summary</h3>
+                    <p class="job-list__content__text">{{qualifications}}</p>
+                  </div>
+                </div> -->
+      </article>
+      {{/each}}
+    </div>
   </section>
+  <section class="job-list__button">
+    <div class="job-list__button__navigation">
+      <button class="job-list__button__navigation--up" aria-label="Up" type="button"></button>
+      <button class="job-list__button__navigation--select" type="button">Select</button>
+      <button class="job-list__button__navigation--down" aria-label="Down" type="button"></button>
+    </div>
+    <div class="job-list__button__view">
+      <button type="button" id="viewTrigger"></button>
+    </div>
+    <div class="switch large">
+      <input class="switch-input" id="card-list" type="checkbox" name="exampleSwitch">
+      <label class="switch-paddle" for="card-list">
+        <span class="show-for-sr">Job Postings View</span>
+        <span class="switch-inactive" aria-hidden="true">Card View</span>
+        <span class="switch-active" aria-hidden="true">List View</span>
+      </label>
+    </div>
+  </section>
+
 </main>
 
       
