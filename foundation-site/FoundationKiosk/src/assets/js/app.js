@@ -11,6 +11,7 @@ import Foundation from 'foundation-sites';
 import 'tablesaw/dist/tablesaw.jquery';
 import libs from './lib/dependencies';
 import { getEvents } from './lib/aclib/Granicus';
+import { getSPMediaRSS } from './lib/aclib/RSSFeed';
 
 window.libs = libs;
 
@@ -87,6 +88,8 @@ $(function () {
     .trigger('enhance.tablesaw');
 
     let events = getEvents(events);
+
+    getSPMediaRSS();
 
 });
 
