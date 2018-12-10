@@ -25,7 +25,7 @@ function getEvents(events) {
 
             if (ev._Status === "Running") {
             
-                evtBox.innerHTML += ev._Name.replace("/", " ") + " " + evDate.toLocaleString().replace(/:\d{2}\s/, ' ');
+                evtBox.innerHTML += `${ev._Name.replace("/", " ")} ${evDate.toLocaleString().replace(/:\d{2}\s/, ' ')}`;
 
                 evtBox.innerHTML += `<ul><a href='http://alachua.granicus.com/MediaPlayer.php?view_id=8&event_id=${ev._ID}' >${ev._Name}</a></ul>`;            
             }
