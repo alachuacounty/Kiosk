@@ -91,16 +91,20 @@ $(function () {
     //lets go ahead and use these lib functions to transform elements passed as params
 
     let events = document.querySelector("#granicus-events");
+    let rss = document.querySelector("#media-events");
+    let eventsGNV = document.querySelector("#local-events-container");
 
     if(!!events) {
       getEvents(events)
     }
 
-    
-    getSPMediaRSS();
+    if (!!rss) {
+      getSPMediaRSS(rss);
+    } 
 
-    getGNVEvents();
-
+    if (!!eventsGNV) {
+      getGNVEvents(eventsGNV);
+    }
 });
 
 var TablesawConfig = {

@@ -1,7 +1,7 @@
 "use strict"
 //GNVEvents.js
 
-function getGNVEvents() {
+function getGNVEvents(eventsGNV) {
 
     const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
     
@@ -12,12 +12,16 @@ function getGNVEvents() {
     })
     .then((data) => {
         
-        $('#local-events-container').append($('#tribe-events-content', data).html());
+        //we already have jQuery loaded so why not use it here then...
+        
+        eventsGNV.innerHTML += $('#tribe-events-content', data).html();
 
         $('#tribe-events-header').remove();
         
         //console.log($('#tribe-events-content', data).html());
     })
+
+    return eventsGNV;
 
 }
 

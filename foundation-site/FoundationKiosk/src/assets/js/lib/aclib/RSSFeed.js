@@ -3,12 +3,11 @@
 
 import regeneratorRuntime from "regenerator-runtime";
 
-function getSPMediaRSS() {
+function getSPMediaRSS(rss) {
 
     let Parser = require('rss-parser');
     let parser = new Parser();
 
-    let mediaBox = document.querySelector("#media-events");
     let mediaIdx = 0;
  
     (async () => {
@@ -25,7 +24,7 @@ function getSPMediaRSS() {
 
             console.log(item.title + ':' + item.link)
 
-            mediaBox.innerHTML += `<ul><a href='${item.link}'>${item.title}</a></ul>`
+            rss.innerHTML += `<ul><a href='${item.link}'>${item.title}</a></ul>`
 
             }
 
@@ -35,6 +34,7 @@ function getSPMediaRSS() {
     
     })();
 
+    return rss;
 }
 
 export { getSPMediaRSS }
