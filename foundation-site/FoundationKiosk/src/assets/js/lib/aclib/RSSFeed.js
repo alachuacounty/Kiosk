@@ -16,7 +16,8 @@ function getSPMediaRSS() {
         const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
 
         let feed = await parser.parseURL(CORS_PROXY + 'http://alachuacounty.us/news/Article/_layouts/listfeed.aspx?List=%7BFC4D6F7C-8C12-4574-B8CE-B9F62401A444%7D');
-        console.log(feed.title);
+        
+        console.log(feed);
 
         feed.items.forEach(item => {
                     
@@ -24,7 +25,7 @@ function getSPMediaRSS() {
 
             console.log(item.title + ':' + item.link)
 
-            mediaBox.innerHTML += `<ul><a>${item.title}:${item.link}</a></ul>`
+            mediaBox.innerHTML += `<ul><a href='${item.link}'>${item.title}</a></ul>`
 
             }
 

@@ -7,14 +7,12 @@ function getEvents(events) {
     .then((response) => { return response.json(); })
     .then((json) => { 
         
-        events = json;
+        let eventlist = json;
         
         //Events are returned normally latest to newest so they must be reversed
-        events = JSON.parse(events).reverse();
+        eventlist = JSON.parse(eventlist).reverse();
 
-        let evtBox = document.querySelector("#granicus-events");
-
-        events.forEach( ev => {
+        eventlist.forEach( ev => {
 
             var evDate = new Date(0);
 
@@ -27,13 +25,13 @@ function getEvents(events) {
             //if there is a live event produce a link to go directly to the meeting-- most likely this will need to be changed...
             if (ev._Status === "Running") {
             
-                evtBox.innerHTML += `${ev._Name.replace("/", " ")} ${evDate.toLocaleString().replace(/:\d{2}\s/, ' ')}`;
+                events.innerHTML += `${ev._Name.replace("/", " ")} ${evDate.toLocaleString().replace(/:\d{2}\s/, ' ')}`;
 
-                evtBox.innerHTML += `<ul><a href='http://alachua.granicus.com/MediaPlayer.php?view_id=8&event_id=${ev._ID}'>${ev._Name}</a></ul>`;            
+                events.innerHTML += `<ul><a href='http://alachua.granicus.com/MediaPlayer.php?view_id=8&event_id=${ev._ID}'>${ev._Name}</a></ul>`;            
             }
             else {
 
-                evtBox.innerHTML += `<ul>${ev._Name.replace("/", " ")} ${evDate.toLocaleString().replace(/:\d{2}\s/, ' ')}</ul>`;
+                events.innerHTML += `<ul>${ev._Name.replace("/", " ")} ${evDate.toLocaleString().replace(/:\d{2}\s/, ' ')}</ul>`;
             }
             
         });

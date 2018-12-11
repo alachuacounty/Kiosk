@@ -88,8 +88,15 @@ $(function () {
     .foundation()
     .trigger('enhance.tablesaw');
 
-    let events = getEvents(events);
+    //lets go ahead and use these lib functions to transform elements passed as params
 
+    let events = document.querySelector("#granicus-events");
+
+    if(!!events) {
+      getEvents(events)
+    }
+
+    
     getSPMediaRSS();
 
     getGNVEvents();
