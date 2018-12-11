@@ -39,7 +39,7 @@ function getEvents(events) {
         });
         
     })
-    ["catch"]((error) => { return console.error('Error', error); });
+    ["catch"]((error) => {return console.error('Error', error); });
 
     return events;
 }

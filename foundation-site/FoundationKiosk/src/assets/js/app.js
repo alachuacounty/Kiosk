@@ -12,6 +12,7 @@ import 'tablesaw/dist/tablesaw.jquery';
 import libs from './lib/dependencies';
 import { getEvents } from './lib/aclib/Granicus';
 import { getSPMediaRSS } from './lib/aclib/RSSFeed';
+import { getGNVEvents } from './lib/aclib/GNVEvents';
 
 window.libs = libs;
 
@@ -90,6 +91,8 @@ $(function () {
     let events = getEvents(events);
 
     getSPMediaRSS();
+
+    getGNVEvents();
 
 });
 
