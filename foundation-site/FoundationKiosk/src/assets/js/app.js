@@ -11,7 +11,7 @@ import Foundation from 'foundation-sites';
 import 'tablesaw/dist/tablesaw.jquery';
 import libs from './lib/dependencies';
 import { getEvents } from './lib/aclib/Granicus';
-import { getSPMediaRSS } from './lib/aclib/RSSFeed';
+import { getRSS } from './lib/aclib/RSSFeed';
 import { getGNVEvents } from './lib/aclib/GNVEvents';
 
 window.libs = libs;
@@ -88,12 +88,17 @@ $(function () {
     .foundation()
     .trigger('enhance.tablesaw');
 
-    let events = getEvents(events);
+    //lets go ahead and use these lib functions to transform elements passed as params
 
-    getSPMediaRSS();
+    let events = document.querySelector("#granicus-events");
+    if (events) events = getEvents(events);
 
-    getGNVEvents();
+    let rss = document.querySelector("#media-events");
+    if (rss) rss = getRSS(rss, "http://alachuacounty.us/news/Article/_layouts/listfeed.aspx?List=%7BFC4D6F7C-8C12-4574-B8CE-B9F62401A444%7D", 5);
 
+    let eventsGNV = document.querySelector("#local-events-container");
+    if (eventsGNV) eventsGNV = getGNVEvents(eventsGNV);
+    
 });
 
 var TablesawConfig = {
