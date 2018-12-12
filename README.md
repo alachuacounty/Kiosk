@@ -11,16 +11,24 @@ Some of the special feautures included in the kiosk are a light that shows if a 
 
 ![alt text][screensaver]
 
-[screensaver]: foundation-site/FoundationKiosk/src/assets/img/screensaver.png "Screen Saver for Read Me"
+[screensaver]: foundation-site/FoundationKiosk/src/assets/img/readme-img/screen-4readme.png "Screen Saver for Read Me"
 
 ![alt text][home]
 
-[home]: foundation-site/FoundationKiosk/src/assets/img/home-kiosk.png "Home Screen for Read Me"
+[home]: foundation-site/FoundationKiosk/src/assets/img/readme-img/home-4readme.png "Home Screen for Read Me"
 
 ![alt text][directory]
 
-[directory]: foundation-site/FoundationKiosk/src/assets/img/directory-kiosk.png "Directory for Read Me"
+[directory]: foundation-site/FoundationKiosk/src/assets/img/readme-img/directory-4readme.png "Directory for Read Me"
 
 ![alt text][maps]
 
-[maps]: foundation-site/FoundationKiosk/src/assets/img/maps-kiosk.png "Map for Read Me"
+[maps]: foundation-site/FoundationKiosk/src/assets/img/readme-img/map-4readme.png "Map for Read Me"
+
+![alt text][cards]
+
+[cards]: foundation-site/FoundationKiosk/src/assets/img/readme-img/cards-4readme.png "Map for Read Me"
+
+![alt text][videos]
+
+[videos]: foundation-site/FoundationKiosk/src/assets/img/readme-img/videos-4readme.png "Map for Read Me"
