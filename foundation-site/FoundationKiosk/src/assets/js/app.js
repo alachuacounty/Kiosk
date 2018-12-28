@@ -98,6 +98,8 @@ $(function () {
 
     let eventsGNV = document.querySelector("#local-events-container");
     if (eventsGNV) eventsGNV = getGNVEvents(eventsGNV);
+
+    function whichPartial () { return "events" }
     
 });
 
@@ -114,5 +116,6 @@ $('[data-app-dashboard-toggle-shrink]').on('click', function(e) {
 //Test Job Postings View Trigger
 
 var test = document.getElementById("viewTrigger").addEventListener("click", function (e) {
-  console.log("It's working!")
+  console.log("It's working!");
+
 }, false);
